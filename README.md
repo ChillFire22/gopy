@@ -50,3 +50,5 @@ $ls
 ```
 and in the original directory, the two files are deleting
 
+# Warning
+This tool is provided as-is with no guarantees.
