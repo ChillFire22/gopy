@@ -19,32 +19,34 @@ Copying directories will not be supported in v-0.0.1
 # Examples
 Assuming the placeholder command name of 'gopy'
 Marking:
-> $gopy --list cwd
-> Index)  Path
-> 1)  foo.txt
-> 2)  bar.txt
-> 3)  readme.md
-> 4)  supersecretburgerrecipe
-> $gopy --mark "1 2 4"
-> $gopy --list targets
-> Index, selected(yes:y/no:n)  Path
-> 1, y)  /path/to/foo.txt
-> 2, y) /path/to/bar.txt
-> 3, y) /path/to/readme.md
-> $cd /path/to/dirA
-> $cd dirB/dirC
-> $cd dir1
-> $gopy --move 3 --copy
-> $ls
-> readme.md
-> $cd ..
-> $gopy --move
-> $ls
-> foo.txt  bar.txt  readme.md
-> $gopy --select "3 2"
-> cd ..
-> $gopy --move --cut
-> $ls
-> readme.md  bar.txt
+```
+$gopy --list cwd
+ Index)  Path
+ 1)  foo.txt
+ 2)  bar.txt
+ 3)  readme.md
+ 4)  supersecretburgerrecipe
+$gopy --mark "1 2 4"
+$gopy --list targets
+ Index, selected(yes:y/no:n)  Path
+ 1, y)  /path/to/foo.txt
+ 2, y) /path/to/bar.txt
+ 3, y) /path/to/readme.md
+$cd /path/to/dirA
+$cd dirB/dirC
+$cd dir1
+$gopy --move 3 --copy
+$ls
+ readme.md
+$cd ..
+$gopy --move
+$ls
+ foo.txt  bar.txt  readme.md
+$gopy --select "3 2"
+cd ..
+$gopy --move --cut
+$ls
+ readme.md  bar.txt
+```
 and in the original directory, the two files are deleting
 
