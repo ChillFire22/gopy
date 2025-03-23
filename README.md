@@ -24,8 +24,8 @@ $gopy --list cwd
  Index)  Path
  1)  foo.txt
  2)  bar.txt
- 3)  readme.md
  4)  supersecretburgerrecipe
+ 3)  readme.md
 $gopy --mark "1 2 4"
 $gopy --list targets
  Index, selected(yes:y/no:n)  Path
